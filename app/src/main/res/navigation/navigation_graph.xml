@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/hotelFragment">
+
+    <fragment
+        android:id="@+id/hotelFragment"
+        android:name="com.example.hotel.presentation.fragment.HotelFragment"
+        android:label="HotelFragment" >
+        <deepLink
+            app:uri="android-app://example.google.app/hotelFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/roomsFragment2"
+        android:name="com.example.number.presentation.fragment.RoomsFragment"
+        android:label="RoomsFragment" >
+        <deepLink
+            app:uri="android-app://example.google.app/roomsFragment/{metadataFileSyncFilter}" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.example.booking.presentation.fragment.BookingFragment"
+        android:label="BookingFragment" >
+
+        <deepLink
+            app:uri="android-app://example.google.app/bookingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paidFragment"
+        android:name="com.example.paid.presentation.fragment.PaidFragment"
+        android:label="fragment_paid"
+        tools:layout="@layout/fragment_paid" >
+        <deepLink
+            app:uri="android-app://example.google.app/paidFragment" />
+
+    </fragment>
+</navigation>

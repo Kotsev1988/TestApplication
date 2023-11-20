@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FD0000</color>
+
+    <color name="error_red">#26EB5757</color>
+
+    <color name="text_title">#313131</color>
+    <color name="error">#FF0000</color>
+    <color name="stroke_gray">#79747E</color>
+
+    <color name="text_field_color">#F6F6F9</color>
+    <color name="text_gray">#A9ABB7</color>
+    <color name="text_input">#14142B</color>
+</resources>

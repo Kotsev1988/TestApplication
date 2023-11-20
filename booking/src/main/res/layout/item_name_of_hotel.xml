@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:strokeWidth="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ratingTextCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="16dp"
+        app:strokeWidth="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp"
+            android:background="#33FFC700"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/star"
+                />
+            <TextView
+                android:id="@+id/ratingTextBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFA800"
+                android:layout_marginEnd="5dp"
+                />
+
+            <TextView
+                android:id="@+id/ratingNameBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFA800"
+                />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.Material3.Button.TextButton"
+                android:id="@+id/hotelAddressTextBooking"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:textAlignment="textStart"
+                android:layout_marginEnd="16dp"
+                android:textSize="14sp"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="0dp"
+                android:textColor="#0D72FF"
+                android:text="Address"
+                app:layout_constraintStart_toStartOf="@+id/ratingTextCard"
+                app:layout_constraintTop_toBottomOf="@+id/hotelNameTextBooking"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+    <TextView
+        android:id="@+id/hotelNameTextBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:lineHeight="26.4sp"
+        android:textFontWeight="500"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/button_font"
+        app:layout_constraintStart_toStartOf="@+id/ratingTextCard"
+        app:layout_constraintTop_toBottomOf="@+id/ratingTextCard"
+        />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
