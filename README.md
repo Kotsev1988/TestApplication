@@ -1,11 +1,11 @@
 Стек технологий:
 
-Kotlin 
-Корутины
-﻿Flow
-﻿﻿Dagger или Koin
-﻿﻿MVVM
-﻿﻿AdapterDelegates
+Kotlin
+Coroutines
+Flow﻿﻿
+Dagger
+MVVM﻿﻿
+AdapterDelegates
 Clean Architecture
 Многомодульность
 Room 
