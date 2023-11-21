@@ -9,5 +9,3 @@ AdapterDelegates,
 Clean Architecture,
 Многомодульность,
 Room 
-
-***Создал branches HotelApp где использовал Gradle Kotlin DSL ***
