@@ -11,16 +11,14 @@ dependencyResolutionManagement {
         google()
         jcenter()
         mavenCentral()
-        maven {
-            url 'https://jitpack.io'
-        }
+        maven { url = uri("https://www.jitpack.io" ) }
     }
 }
 rootProject.name = "TestApplication"
-include ':app'
-include ':api'
-include ':hotel'
-include ':number'
-include ':booking'
-include ':paid'
-include ':util'
+include (":app")
+include (":api")
+include (":hotel")
+include (":number")
+include (":booking")
+include (":paid")
+include (":util")
